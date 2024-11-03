@@ -17,3 +17,20 @@ window.addEventListener('click', (event) => {
         menu.classList.remove('active');
     }
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+
+    // Toggle the menu open/close when the hamburger icon is clicked
+    hamburger.addEventListener("click", (event) => {
+        event.stopPropagation(); // Prevent click from bubbling to the document
+        menu.classList.toggle("active");
+    });
+
+    // Close the menu if clicking outside of it
+    document.addEventListener("click", (event) => {
+        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+            menu.classList.remove("active");
+        }
+    });
+});
