@@ -329,3 +329,79 @@ section img {
         display: flex; /* Show menu when active */
     }
 }
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    background-color: #111; /* Dark background for the theme */
+    color: #e0e0e0; /* Ice grey text */
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e0e0e0; /* Ice grey for hamburger menu */
+}
+
+.menu {
+    display: flex; /* Flex display for desktop */
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #e0e0e0; /* Ice grey text */
+    text-decoration: none;
+}
+
+.cta-button {
+    display: inline-block; /* Makes the button an inline block element */
+    padding: 10px 20px; /* Padding around the text */
+    font-size: 1.2rem; /* Font size for the button text */
+    color: #fff; /* Text color */
+    background-color: #ff6347; /* Button background color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Space above the button */
+}
+
+.cta-button:hover {
+    background-color: #e55347; /* Darker shade on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Initially hide the menu */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 70px; /* Adjust position as needed */
+        left: 0;
+        background: #111; /* Dark grey background for menu */
+        width: 100%;
+        z-index: 10;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+}
