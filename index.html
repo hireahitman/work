@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <title>Responsive Spy App Website</title>
+    <title>Spy App Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div id="sidebar">
-        <button id="menuToggle" onclick="toggleMenu()">☰</button>
-        <nav>
-            <ul id="menuItems">
-                <li><a href="#android">Android Spy App</a></li>
-                <li><a href="#whatsapp">WhatsApp Spy App</a></li>
-                <li><a href="#iphone">iPhone Spy App</a></li>
-                <li><a href="#anti-spyware">Anti Spyware & Cybersecurity</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div id="content">
-        <header class="hero">
-            <h1>Welcome to Our Spy App Solutions</h1>
-            <p>Explore our range of apps for complete digital surveillance.</p>
-        </header>
-
-        <section id="android" class="content-section">
+    <header>
+        <div class="hero">
+            <h1>Welcome to Our Spy App Services</h1>
+            <p>Discover the best solutions for your surveillance needs.</p>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#android">Android Spy App</a></li>
+                    <li><a href="#whatsapp">WhatsApp Spy App</a></li>
+                    <li><a href="#iphone">iPhone Spy App</a></li>
+                    <li><a href="#anti-spyware">Anti Spyware & Cybersecurity</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="android">
             <h2>Android Spy App</h2>
-            <p>Details about the Android Spy App...</p>
-            <img src="android-image.jpg" alt="Android Spy App">
+            <p>Unveil powerful monitoring features on Android devices.</p>
+            <img src="android-image.jpg" alt="Android Spy App" />
         </section>
 
-        <section id="whatsapp" class="content-section">
+        <section id="whatsapp">
             <h2>WhatsApp Spy App</h2>
-            <p>Details about the WhatsApp Spy App...</p>
-            <img src="whatsapp-image.jpg" alt="WhatsApp Spy App">
+            <p>Access and control WhatsApp communications effortlessly.</p>
+            <img src="whatsapp-image.jpg" alt="WhatsApp Spy App" />
         </section>
 
-        <section id="iphone" class="content-section">
+        <section id="iphone">
             <h2>iPhone Spy App</h2>
-            <p>Details about the iPhone Spy App...</p>
-            <img src="iphone-image.jpg" alt="iPhone Spy App">
+            <p>Monitor iPhone activities with advanced features.</p>
+            <img src="iphone-image.jpg" alt="iPhone Spy App" />
         </section>
 
-        <section id="anti-spyware" class="content-section">
+        <section id="anti-spyware">
             <h2>Anti Spyware & Cybersecurity</h2>
-            <p>Details about Anti Spyware & Cybersecurity...</p>
-            <img src="anti-spyware-image.jpg" alt="Anti Spyware">
+            <p>Protect yourself against unauthorized surveillance.</p>
+            <img src="anti-spyware-image.jpg" alt="Anti Spyware" />
         </section>
 
-        <section id="contact" class="content-section">
+        <section id="contact">
             <h2>Contact Us</h2>
-            <p>Details about contacting us...</p>
-            <img src="contact-image.jpg" alt="Contact Us">
+            <p>Get in touch for inquiries or support.</p>
+            <img src="contact-image.jpg" alt="Contact Us" />
         </section>
-    </div>
-
-    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
