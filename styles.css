@@ -1,115 +1,100 @@
-/* Import Kanit font */
 * {
-    font-family: 'Kanit', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.6;
 }
 
-#sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #333;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    transition: transform 0.3s ease;
-}
-
-#menuToggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-#menuItems {
-    list-style: none;
-    width: 100%;
-}
-
-#menuItems li {
-    padding: 10px;
-    text-align: left;
-}
-
-#menuItems li a {
-    color: white;
-    text-decoration: none;
-}
-
-#menuItems li a:hover {
-    color: #FFD700;
-}
-
-#content {
-    margin-left: 220px;
+header {
+    background: #333;
+    color: #fff;
     padding: 20px;
-    width: calc(100% - 220px);
 }
 
 .hero {
     text-align: center;
-    padding: 50px;
-    background-color: #f8f9fa;
+    padding: 50px 20px;
 }
 
-.content-section {
-    padding: 50px;
-    margin-top: 20px;
+.hero h1 {
+    font-size: 2.5rem;
 }
 
-.content-section img {
-    width: 100%;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6347; /* Change to a contrasting color on hover */
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+section img {
+    max-width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-    #sidebar {
-        transform: translateX(-100%);
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
         width: 100%;
-        z-index: 1000; /* Ensure the sidebar is on top */
+        z-index: 10;
     }
 
-    #sidebar.open {
-        transform: translateX(0);
-    }
-
-    #menuToggle {
-        display: block; /* Show the toggle button on smaller screens */
-    }
-
-    #menuItems li {
-        padding: 15px;
+    .menu li {
+        margin: 10px 0;
         text-align: center;
     }
 
-    #content {
-        margin-left: 0;
-        width: 100%;
-        padding: 10px;
+    .hamburger {
+        display: block;
     }
 
-    .hero {
-        padding: 30px;
-    }
-
-    .content-section {
-        padding: 20px;
+    .menu.active {
+        display: flex;
     }
 }
