@@ -531,3 +531,74 @@ header {
 .menu.active {
     left: 0; /* Slide in the menu */
 }
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #e0e0e0;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e0e0e0;
+    padding: 10px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+}
+
+/* Menu Styles */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #e0e0e0;
+    overflow: hidden;
+    transition: left 0.3s ease; /* Smooth transition for slide effect */
+    z-index: 1;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* Active class to slide the menu in */
+.menu.active {
+    left: 0; /* Slide in from the left */
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Off-screen initially */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #e0e0e0;
+    transition: left 0.3s ease; /* Smooth transition for slide effect */
+}
+
+.menu.active {
+    left: 0; /* Slide in the menu */
+}
+.hamburger {
+    font-size: 36px; /* Adjust size as needed */
+    cursor: pointer;
+    color: #e0e0e0; /* Set color as desired */
+    padding: 10px;
+}
