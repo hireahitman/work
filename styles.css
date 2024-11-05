@@ -620,3 +620,79 @@ body {
     opacity: 1;
     visibility: visible;
 }
+.content-wrapper {
+            max-width: 600px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        .learn-more {
+            color: #29a3a3;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .hidden-content {
+            display: none;
+            margin-top: 0.5rem;
+            color: #cccccc;
+        }
+.logo {
+    font-size: 17px;         /* Adjust font size for the logo */
+    font-weight: bold;       /* Make the text bold */
+    color: #ffff;          /* Set the color of the logo text */
+    text-decoration: none;   /* Remove the underline */
+}
+
+.logo:hover {
+    color: #555555;          /* Change color on hover for a nice effect */
+}
+.contact-info {
+    background-color: #333; /* Dark background */
+    color: #fff;            /* White text color */
+    padding: 20px;         /* Padding around the section */
+    border-radius: 8px;    /* Rounded corners */
+    margin: 20px 0;        /* Margin for spacing */
+}
+
+.contact-item {
+    margin: 10px 0;        /* Margin between items */
+}
+
+.contact-link {
+    color: #00ccff;        /* Bright link color */
+    text-decoration: none;  /* Remove underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+.contact-info {
+    background-color: #333; /* Dark background */
+    color: #fff;            /* White text color */
+    padding: 20px;         /* Padding around the section */
+    border-radius: 8px;    /* Rounded corners */
+    margin: 20px 0;        /* Margin for spacing */
+}
+
+.contact-item {
+    display: flex;          /* Use flexbox for alignment */
+    align-items: center;    /* Center items vertically */
+    margin: 10px 0;        /* Margin between items */
+}
+
+.contact-icon {
+    font-size: 24px;       /* Icon size */
+    margin-right: 10px;    /* Space between icon and text */
+    color: #00ccff;        /* Icon color */
+}
+
+.contact-link {
+    color: #00ccff;        /* Bright link color */
+    text-decoration: none;  /* Remove underline */
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
